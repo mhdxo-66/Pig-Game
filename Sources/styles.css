@@ -1,4 +1,49 @@
 * {
-    -webkit-transition: all 0.3s;
-    border-radius: 20px;
+    transition: all 0.3s;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    background: linear-gradient(to top left, #A1C0Eb, #bf2e34);
+    opacity: 0.5;
+}
+
+button {
+    display: flex;
+    padding: 35px 45px;
+    border-radius: 35px;
+    border: none;
+    margin: 100px auto;
+}
+
+button:hover {
+    transform: scale(1.05, 1.05);
+    opacity: 1.0;
+}
+
+div {
+    display: flex;
+}
+
+.P1,
+.P2 {
+    margin: 50px auto;
+    background-color: white;
+    padding: 200px;
+    border-radius: 25px;
+}
+
+.P1:hover,
+.P2:hover {
+    transform: scale(1.015, 1.015);
+}
+
+h1 {
+    margin: 0 auto;
+}
+
+.Box {
+    background-color: #a29bfe;
+    padding: 20px 40px;
+    border-radius: 25px;
 }
