@@ -23,13 +23,8 @@ function rnmc() {
 let clr1 = document.querySelector('.P1');
 let clr2 = document.querySelector('.P2');
 function clrc(stat) {
-    if (stat == 1) {
-        clr1.style.opacity = '1.0'
-        clr2.style.opacity = '0.6'
-    } else if (stat == 2) {
-        clr1.style.opacity = '0.6'
-        clr2.style.opacity = '1.0'
-    }
+    clr1.style.opacity = stat === 1 ? '1.0' : '0.6';
+    clr2.style.opacity = stat === 2 ? '1.0' : '0.6';
 }
 clrc(1);
 document.querySelector('.dise').addEventListener('click', function () {
@@ -40,7 +35,7 @@ document.querySelector('.dise').addEventListener('click', function () {
             current1 += rnum;
             plscore();
         } else if (rnum < 2) {
-            pl1 += current1;
+            pl1 += current1 - 10;
             current1 = 0;
             p1 = false;
             p2 = true;
@@ -52,7 +47,7 @@ document.querySelector('.dise').addEventListener('click', function () {
             current2 += rnum;
             plscore();
         } else if (rnum < 2) {
-            pl2 += current2;
+            pl2 += current2 - 10;
             current2 = 0;
             p1 = true;
             p2 = false;
