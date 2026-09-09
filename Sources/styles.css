@@ -16,9 +16,13 @@ button {
     margin: 100px auto;
 }
 
-button:hover {
+button:active {
     transform: scale(1.05, 1.05);
     opacity: 1.0;
+}
+
+button:active {
+    transform: scale(1.1, 1.1);
 }
 
 div {
@@ -46,4 +50,8 @@ h1 {
     background-color: #a29bfe;
     padding: 20px 40px;
     border-radius: 25px;
+}
+
+.current1 {
+    display: flex;
 }
