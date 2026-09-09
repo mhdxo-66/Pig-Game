@@ -13,10 +13,11 @@ button {
     padding: 35px 45px;
     border-radius: 35px;
     border: none;
+    box-shadow: 0 0 30px #2B2B2B;
     margin: 100px auto;
 }
 
-button:active {
+button:hover {
     transform: scale(1.05, 1.05);
     opacity: 1.0;
 }
@@ -25,16 +26,18 @@ button:active {
     transform: scale(1.1, 1.1);
 }
 
+
 div {
     display: flex;
 }
 
 .P1,
 .P2 {
-    margin: 50px auto;
+    margin: 62px auto;
     background-color: white;
     padding: 200px;
     border-radius: 25px;
+    box-shadow: 0 0 30px #2B2B2B;
 }
 
 .P1:hover,
