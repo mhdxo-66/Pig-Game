@@ -3,9 +3,14 @@
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
+html {
+    min-height: 100%;
+}
+
 body {
     background: linear-gradient(to top left, #A1C0Eb, #bf2e34);
-    opacity: 0.5;
+    opacity: 0.6;
+
 }
 
 button {
@@ -33,10 +38,10 @@ div {
 
 .P1,
 .P2 {
-    margin: 62px auto;
+    margin: auto;
+    margin-top: 20px;
+    padding: 100px 200px;
     background-color: white;
-    padding: 200px;
-    height: 236px;
     border-radius: 25px;
     box-shadow: 0 0 30px #2B2B2B;
 }
@@ -46,8 +51,13 @@ div {
     transform: scale(1.015, 1.015);
 }
 
-h1 {
-    margin: 0 auto;
+.pl1,
+.pl2 {
+    font-size: 30px;
+    text-align: center;
+    background-color: #bf2e34;
+    padding: 10px;
+    border-radius: 25px;
 }
 
 .Box {
