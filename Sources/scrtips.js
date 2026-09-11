@@ -14,3 +14,53 @@ function plscore() {
     c2.innerHTML = `Current <br> - ${current2} -`;
 };
 plscore();
+let p1 = true;
+let p2 = false;
+
+function rnmc() {
+    return Math.trunc(Math.random() * 6) + 1;
+}
+let clr1 = document.querySelector('.P1');
+let clr2 = document.querySelector('.P2');
+function clrc(stat) {
+    if (stat == 1) {
+        clr1.style.opacity = '1.0'
+        clr2.style.opacity = '0.6'
+    } else if (stat == 2) {
+        clr1.style.opacity = '0.6'
+        clr2.style.opacity = '1.0'
+    }
+}
+clrc(1);
+document.querySelector('.dise').addEventListener('click', function () {
+    let rnum = rnmc();
+    console.log(rnum);
+    if (p1 == true) {
+        if (rnum > 1) {
+            current1 += rnum;
+            plscore();
+        } else if (rnum < 2) {
+            pl1 += current1;
+            current1 = 0;
+            p1 = false;
+            p2 = true;
+            plscore();
+            clrc(2);
+        }
+    } else if (p2 == true) {
+        if (rnum > 1) {
+            current2 += rnum;
+            plscore();
+        } else if (rnum < 2) {
+            pl2 += current2;
+            current2 = 0;
+            p1 = true;
+            p2 = false;
+            plscore();
+            clrc(1);
+
+        }
+    }
+}
+)
+
