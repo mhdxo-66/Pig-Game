@@ -10,7 +10,7 @@ let c2 = document.querySelector('.current2');
 function plscore() {
     player1.textContent = pl1;
     player2.textContent = pl2;
-    c1.textContent = current1;
-    c2.textContent = current2;
+    c1.innerHTML = `Current <br> - ${current1} -`;
+    c2.innerHTML = `Current <br> - ${current2} -`;
 };
 plscore();
