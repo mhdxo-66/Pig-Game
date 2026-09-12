@@ -36,6 +36,7 @@ div {
     margin: 62px auto;
     background-color: white;
     padding: 200px;
+    height: 236px;
     border-radius: 25px;
     box-shadow: 0 0 30px #2B2B2B;
 }
@@ -51,10 +52,8 @@ h1 {
 
 .Box {
     background-color: #a29bfe;
+    margin: 100px auto;
     padding: 20px 40px;
     border-radius: 25px;
-}
-
-.current1 {
     display: flex;
 }
