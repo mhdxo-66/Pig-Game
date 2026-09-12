@@ -1,10 +1,10 @@
 "use strict";
-let pl1 = 0;
-let pl2 = 0;
+let pl1 = JSON.parse(localStorage.getItem('pl1')) || 0;
+let pl2 = JSON.parse(localStorage.getItem('pl2')) || 0;
 let player1 = document.querySelector('.pl1');
 let player2 = document.querySelector('.pl2');
-let current1 = 0;
-let current2 = 0;
+let current1 = JSON.parse(localStorage.getItem('current1')) || 0;
+let current2 = JSON.parse(localStorage.getItem('current2')) || 0;
 let c1 = document.querySelector('.current1');
 let c2 = document.querySelector('.current2');
 function plscore() {
@@ -23,8 +23,8 @@ function rnmc() {
 let clr1 = document.querySelector('.P1');
 let clr2 = document.querySelector('.P2');
 function clrc(stat) {
-    clr1.style.opacity = stat === 1 ? '1.0' : '0.6';
-    clr2.style.opacity = stat === 2 ? '1.0' : '0.6';
+    clr1.style.opacity = stat === 1 ? '1.0' : '0.5';
+    clr2.style.opacity = stat === 2 ? '1.0' : '0.5';
 }
 clrc(1);
 document.querySelector('.dise').addEventListener('click', function () {
@@ -33,10 +33,13 @@ document.querySelector('.dise').addEventListener('click', function () {
     if (p1 == true) {
         if (rnum > 1) {
             current1 += rnum;
+            localStorage.setItem("current1", JSON.stringify(current1));
             plscore();
         } else if (rnum < 2) {
             pl1 += current1 - 10;
             current1 = 0;
+            localStorage.setItem("current1", JSON.stringify(current1));
+            localStorage.setItem("pl1", JSON.stringify(pl1));
             p1 = false;
             p2 = true;
             plscore();
@@ -45,10 +48,13 @@ document.querySelector('.dise').addEventListener('click', function () {
     } else if (p2 == true) {
         if (rnum > 1) {
             current2 += rnum;
+            localStorage.setItem("current2", JSON.stringify(current2));
             plscore();
         } else if (rnum < 2) {
             pl2 += current2 - 10;
             current2 = 0;
+            localStorage.setItem("current1", JSON.stringify(current1));
+            localStorage.setItem("pl2", JSON.stringify(pl2));
             p1 = true;
             p2 = false;
             plscore();
