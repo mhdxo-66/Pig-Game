@@ -40,7 +40,7 @@ document.querySelector('.dise').addEventListener('click', function () {
             localStorage.setItem("current1", JSON.stringify(current1));
             plscore();
         } else if (rnum < 2) {
-            pl1 += current1 - 10;
+            pl1 += current1 - 5;
             current1 = 0;
             localStorage.setItem("current1", JSON.stringify(current1));
             localStorage.setItem("pl1", JSON.stringify(pl1));
@@ -55,7 +55,7 @@ document.querySelector('.dise').addEventListener('click', function () {
             localStorage.setItem("current2", JSON.stringify(current2));
             plscore();
         } else if (rnum < 2) {
-            pl2 += current2 - 10;
+            pl2 += current2 - 5;
             current2 = 0;
             localStorage.setItem("current1", JSON.stringify(current1));
             localStorage.setItem("pl2", JSON.stringify(pl2));
@@ -68,4 +68,27 @@ document.querySelector('.dise').addEventListener('click', function () {
     }
 }
 )
+
+document.querySelector('.hold').addEventListener('click', function () {
+    if (p1 === true) {
+        pl1 += current1;
+        current1 = 0;
+        localStorage.setItem("pl1", JSON.stringify(pl1));
+        localStorage.setItem("current1", JSON.stringify(current1));
+        p1 = false;
+        p2 = true;
+        plscore();
+        clrc(2);
+    } else if (p2 === true) {
+        pl2 += current2;
+        current2 = 0;
+        localStorage.setItem("pl2", JSON.stringify(pl2));
+        localStorage.setItem("current2", JSON.stringify(current2));
+        p1 = true;
+        p2 = false;
+        plscore();
+        clrc(1);
+    }
+
+})
 
