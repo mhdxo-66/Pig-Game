@@ -17,6 +17,10 @@ plscore();
 let p1 = true;
 let p2 = false;
 
+document.querySelector('.rst').addEventListener('click', function () {
+    localStorage.clear();
+    location.reload();
+})
 function rnmc() {
     return Math.trunc(Math.random() * 6) + 1;
 }

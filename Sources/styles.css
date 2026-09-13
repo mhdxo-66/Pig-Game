@@ -20,6 +20,7 @@ button {
     padding: 35px 45px;
     border-radius: 35px;
     border: none;
+    font-size: 15px;
     box-shadow: 0 0 30px #2B2B2B;
     margin: 100px auto;
 }
