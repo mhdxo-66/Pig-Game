@@ -27,8 +27,8 @@ function rnmc() {
 let clr1 = document.querySelector('.P1');
 let clr2 = document.querySelector('.P2');
 function clrc(stat) {
-    clr1.style.opacity = stat === 1 ? '1.0' : '0.5';
-    clr2.style.opacity = stat === 2 ? '1.0' : '0.5';
+    clr1.style.opacity = stat === 1 ? '1.0' : '0.6';
+    clr2.style.opacity = stat === 2 ? '1.0' : '0.6';
 }
 clrc(1);
 document.querySelector('.dise').addEventListener('click', function () {

@@ -5,7 +5,7 @@
 }
 
 body {
-    background: linear-gradient(to top left, #A1C0Eb, #bf2e34);
+    background: linear-gradient(to top left, #9C5E65, #fca76d, #bf2e34, #9C5E65);
     background-attachment: fixed;
     opacity: 0.7;
 
@@ -21,12 +21,13 @@ button {
     border-radius: 35px;
     border: none;
     font-size: 15px;
-    box-shadow: 0 0 30px #2B2B2B;
+    box-shadow: 0 0 20px rgb(0, 0, 0.15);
     margin: 100px auto;
 }
 
 button:hover {
     transform: scale(1.05, 1.05);
+    box-shadow: 0 0 40px rgb(0, 0, 0.15);
     opacity: 1.0;
 }
 
@@ -46,18 +47,17 @@ div {
     padding: 90px 200px;
     background-color: white;
     border-radius: 25px;
-    box-shadow: 0 0 30px #2B2B2B;
+    box-shadow: 0 10px 20px rgb(0, 0, 0.15);
 }
 
 .P1:hover,
 .P2:hover {
     transform: scale(1.015, 1.015);
+    box-shadow: 0 10px 40px rgb(0, 0, 0.15);
 }
 
 .pl1,
 .pl2 {
-    /* background-color: #B75170; */
-    /* color: aliceblue; */
     color: black;
     font-size: 40px;
     padding: 30px 10px;
