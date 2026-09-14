@@ -1,6 +1,6 @@
 "use strict";
 let pl1 = JSON.parse(localStorage.getItem('pl1')) || 0;
-let pl2 = JSON.parse(localStorage.getItem('pl2')) || 0;
+let pl2 = JSON.parse(localStorage.getItem('pl2')) || -19;
 let player1 = document.querySelector('.pl1');
 let player2 = document.querySelector('.pl2');
 let current1 = JSON.parse(localStorage.getItem('current1')) || 0;
@@ -10,19 +10,33 @@ let c2 = document.querySelector('.current2');
 function plscore() {
     player1.textContent = pl1;
     player2.textContent = pl2;
-    c1.innerHTML = `Current <br> - ${current1} -`;
-    c2.innerHTML = `Current <br> - ${current2} -`;
+    c1.innerHTML = `Current <br>  ${current1}`;
+    c2.innerHTML = `Current <br>  ${current2}`;
 };
 plscore();
 let p1 = true;
 let p2 = false;
 
-document.querySelector('.rst').addEventListener('click', function () {
+function gover() {
+    if (pl1 <= 20) {
+        alert(`Player 2 Won`)
+        rst();
+    } else if (pl2 <= 20) {
+        alert(`Player 1 Won`)
+        rst();
+    }
+}
+
+function rst() {
     localStorage.clear();
     location.reload();
+}
+document.querySelector('.rst').addEventListener('click', function () {
+    rst();
 })
 function rnmc() {
-    return Math.trunc(Math.random() * 6) + 1;
+    // return Math.trunc(Math.random() * 6) + 1;
+    return 1;
 }
 let clr1 = document.querySelector('.P1');
 let clr2 = document.querySelector('.P2');
@@ -66,6 +80,7 @@ document.querySelector('.dise').addEventListener('click', function () {
 
         }
     }
+    gover();
 }
 )
 
