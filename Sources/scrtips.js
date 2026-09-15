@@ -11,8 +11,8 @@ let ds = document.querySelector('.ds');
 function plscore() {
     player1.textContent = pl1;
     player2.textContent = pl2;
-    c1.innerHTML = `Current <br>  ${current1}`;
-    c2.innerHTML = `Current <br>  ${current2}`;
+    c1.innerHTML = `- Current - <br>  ${current1}`;
+    c2.innerHTML = `- Current - <br>  ${current2}`;
 };
 plscore();
 let p1 = true;

@@ -1,26 +1,26 @@
 * {
     transition: all 0.3s;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-family: cursive;
     text-align: center;
 }
 
 body {
-    background: linear-gradient(to top left, #9C5E65, #fca76d, #bf2e34, #9C5E65);
+    background: linear-gradient(to top left, #753682, #bf2e34, #bf2e34 100%);
     background-attachment: fixed;
     opacity: 0.7;
 
 }
 
-p {
-    font-size: 20px;
+h1 {
+    font-size: 40px;
 }
 
 button {
     display: flex;
-    padding: 35px 45px;
+    padding: 30px 45px;
     border-radius: 35px;
     border: none;
-    font-size: 15px;
+    font-size: 17px;
     box-shadow: 0 0 20px rgb(0, 0, 0.15);
     margin: 70px auto;
 }
@@ -28,7 +28,6 @@ button {
 button:hover {
     transform: scale(1.05, 1.05);
     box-shadow: 0 0 40px rgb(0, 0, 0.15);
-    opacity: 1.0;
 }
 
 button:active {
@@ -44,7 +43,7 @@ div {
 .P2 {
     margin: auto;
     margin-top: 20px;
-    padding: 90px 200px;
+    padding: 80px 180px;
     background-color: white;
     border-radius: 25px;
     box-shadow: 0 10px 20px rgb(0, 0, 0.15);
@@ -58,19 +57,31 @@ div {
 
 .pl1,
 .pl2 {
-    color: black;
-    font-size: 40px;
+    color: #c7365f;
+    font-size: 50px;
     padding: 30px 10px;
-    border-radius: 25px;
+}
+
+.current1,
+.current2 {
+    font-size: 25px;
+    margin: 0 auto;
 }
 
 .dsst {
     width: 140px;
     border-radius: 25px;
+    box-shadow: 0 10px 20px rgb(0, 0, 0.15);
+}
+
+.dsst:hover {
+    transform: scale(1.1, 1.1);
+    box-shadow: 0 10px 40px rgb(0, 0, 0.15);
 }
 
 .Box {
-    background-color: #a29bfe;
+    background-color: #C7365F;
+    color: #FFFFFF;
     margin: 100px auto;
     padding: 10px 50px;
     border-radius: 25px;
