@@ -27,7 +27,6 @@ function gover() {
         rst();
     }
 }
-
 function rst() {
     localStorage.clear();
     location.reload();
@@ -36,8 +35,7 @@ document.querySelector('.rst').addEventListener('click', function () {
     rst();
 })
 function rnmc() {
-    let rnm = Math.trunc(Math.random() * 6) + 1;
-    return rnm;
+    return Math.trunc(Math.random() * 6) + 1;
 }
 let clr1 = document.querySelector('.P1');
 let clr2 = document.querySelector('.P2');
@@ -85,7 +83,6 @@ document.querySelector('.dise').addEventListener('click', function () {
     gover();
 }
 )
-
 document.querySelector('.hold').addEventListener('click', function () {
     if (p1 === true) {
         pl1 += current1;
@@ -108,4 +105,3 @@ document.querySelector('.hold').addEventListener('click', function () {
     }
 
 })
-

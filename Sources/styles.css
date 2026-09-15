@@ -5,7 +5,7 @@
 }
 
 body {
-    background: linear-gradient(to top left, #753682, #bf2e34, #bf2e34 100%);
+    background: linear-gradient(to top left, #bf2e34, #753682 50%, #bf2e34 100%);
     background-attachment: fixed;
     opacity: 0.7;
 
