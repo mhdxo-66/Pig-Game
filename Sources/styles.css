@@ -1,6 +1,7 @@
 * {
     transition: all 0.3s;
     font-family: cursive;
+    border-radius: 25px;
     text-align: center;
 }
 
@@ -18,7 +19,6 @@ h1 {
 button:not(.dise) {
     display: flex;
     padding: 30px 45px;
-    border-radius: 35px;
     border: none;
     font-size: 17px;
     box-shadow: 0 0 20px rgb(0, 0, 0.15);
@@ -46,7 +46,6 @@ div {
     margin-top: 20px;
     padding: 80px 180px;
     background-color: white;
-    border-radius: 25px;
     box-shadow: 0 10px 20px rgb(0, 0, 0.15);
 }
 
@@ -76,7 +75,6 @@ div {
 
 .ds {
     width: 100px;
-    border-radius: 25px;
     box-shadow: 0 10px 20px rgb(0, 0, 0.15);
 
 }
@@ -97,5 +95,4 @@ div {
     color: #FFFFFF;
     margin: 100px auto;
     padding: 10px 50px;
-    border-radius: 25px;
 }
