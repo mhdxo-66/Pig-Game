@@ -15,7 +15,7 @@ h1 {
     font-size: 40px;
 }
 
-button {
+button:not(.dise) {
     display: flex;
     padding: 30px 45px;
     border-radius: 35px;
@@ -25,13 +25,14 @@ button {
     margin: 70px auto;
 }
 
-button:hover {
+button:not(.dise):hover {
     transform: scale(1.05, 1.05);
-    box-shadow: 0 0 40px rgb(0, 0, 0.15);
+    box-shadow: 0 0 30px rgb(0, 0, 0.15);
 }
 
-button:active {
+button:not(.dise):active {
     transform: scale(1.1, 1.1);
+    box-shadow: 0 0 40px rgb(0, 0, 0.15);
 }
 
 
@@ -68,15 +69,27 @@ div {
     margin: 0 auto;
 }
 
-.dsst {
-    width: 140px;
-    border-radius: 25px;
-    box-shadow: 0 10px 20px rgb(0, 0, 0.15);
+.dise {
+    background: none;
+    border: none;
 }
 
-.dsst:hover {
+.ds {
+    width: 100px;
+    border-radius: 25px;
+    box-shadow: 0 10px 20px rgb(0, 0, 0.15);
+
+}
+
+.ds:hover {
     transform: scale(1.1, 1.1);
+    box-shadow: 0 10px 30px rgb(0, 0, 0.15);
+}
+
+.ds:active {
+    transform: scale(1.2, 1.2);
     box-shadow: 0 10px 40px rgb(0, 0, 0.15);
+
 }
 
 .Box {

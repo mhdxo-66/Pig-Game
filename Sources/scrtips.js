@@ -48,7 +48,7 @@ function clrc(stat) {
 clrc(1);
 document.querySelector('.dise').addEventListener('click', function () {
     let rnum = rnmc();
-    ds.innerHTML = `<img src="./dice-${rnum}.png" class="dsst">`;
+    ds.src = `./dice-${rnum}.png`;
     console.log(rnum);
     if (p1 == true) {
         if (rnum > 1) {
