@@ -35,7 +35,6 @@ button:not(.dise):active {
     box-shadow: 0 0 40px rgb(0, 0, 0.15);
 }
 
-
 div {
     display: flex;
 }
@@ -44,7 +43,7 @@ div {
 .P2 {
     margin: auto;
     margin-top: 20px;
-    padding: 80px 180px;
+    padding: 200px;
     background-color: white;
     box-shadow: 0 10px 20px rgb(0, 0, 0.15);
 }
